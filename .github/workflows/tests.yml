@@ -28,5 +28,4 @@ jobs:
 
       - name: Run automated tests
         run: |
-          python -m unittest discover -s tests -p '*_test.py'
-
+          pytest test_main.py
