@@ -3,8 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 import joblib
 
-salary_url = ""
-"https://github.com/ybifoundation/Dataset/raw/main/Salary%20Data.csv"""
+salary_url = "https://github.com/ybifoundation/Dataset/raw/main/Salary%20Data.csv"
 
 salary = pd.read_csv(salary_url)
 
