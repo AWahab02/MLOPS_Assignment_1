@@ -6,6 +6,8 @@ app = Flask(__name__)
 
 model = joblib.load('model.pkl')
 @app.route('/', methods=['GET'])
+
+
 def me():
     return "Hello World"
 
