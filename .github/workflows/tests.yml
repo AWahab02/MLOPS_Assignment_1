@@ -26,3 +26,10 @@ jobs:
       - name: Run automated tests
         run: |
           python -m unittest discover -s tests -p '*_test.py'
+
+      - name: Push changes to main
+        if: success() && github.ref == 'refs/heads/test'
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
