@@ -16,4 +16,3 @@ def test_train_test_split():
     assert X_test.shape[1] == 1
     assert len(X_train) == len(y_train)
     assert len(X_test) == len(y_test)
-
