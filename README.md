@@ -13,3 +13,6 @@
 ## Succesful jenkins pipeline Email
 ![image](https://github.com/AWahab02/MLOPS_Assignment_1/assets/114500718/d0586e90-0d95-49a3-927a-0d5e446b38f0)
 
+## Succesful jenkins pipeline log
+![image](https://github.com/AWahab02/MLOPS_Assignment_1/assets/72225426/da540369-0fcd-4db3-b0e5-8399c437feb1)
+
