@@ -16,3 +16,7 @@
 ## Succesful jenkins pipeline log
 ![image](https://github.com/AWahab02/MLOPS_Assignment_1/assets/72225426/da540369-0fcd-4db3-b0e5-8399c437feb1)
 
+## Likhde proof of webhook + ngrok run
+![image](https://github.com/AWahab02/MLOPS_Assignment_1/assets/72225426/68da472a-4ca1-419d-be97-f0597f9240db)
+
+
