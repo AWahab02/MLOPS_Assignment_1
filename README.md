@@ -10,6 +10,6 @@
 
 ![image](https://github.com/AWahab02/MLOPS_Assignment_1/assets/114500718/4afccbd6-ab1b-4743-a289-2bd68a10712b)
 
-## Succesful jenkins file Email
+## Succesful jenkins pipeline Email
 ![image](https://github.com/AWahab02/MLOPS_Assignment_1/assets/114500718/d0586e90-0d95-49a3-927a-0d5e446b38f0)
 
