@@ -19,7 +19,7 @@ X_train, X_test, y_train, y_test = train_test_split(X,
 model = LinearRegression()
 model.fit(X_train, y_train)
 
-print('hello')
+print('hello world')
 
 joblib.dump(model, 'model.pkl')
 
