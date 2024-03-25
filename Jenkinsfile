@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE_NAME = 'umarwaseemterminator/mlops-assignment-1:latest'
+        DOCKER_IMAGE_NAME = 'awahab02/mlops_assignment_1:latest'
     }
 
     stages {
@@ -10,24 +10,22 @@ pipeline {
             steps {
                 script {
                     // Build the Docker image
-                    sh "docker build -t $flaskimage ."
+                    sh "docker build -t $DOCKER_IMAGE_NAME ."
                 }
             }
         }
 
-        stage('Login Dockerhub abd Push Docker Image') {
+        stage('Login Dockerhub and Push Docker Image') {
             environment {
                 DOCKER_HUB_CREDENTIALS = credentials('dockerhub-credentials')
             }
             steps {
                 script {
                     // Log in to Docker Hub securely
-                    withCredentials([usernamePassword(credentialsId: 'dockerhub-credentials', usernameVariable: 'awahab02', passwordVariable: 'docker123')]) {
-                        sh "echo $DOCKER_HUB_PASSWORD | docker login -u $DOCKER_HUB_USERNAME --password-stdin"
+                    sh "echo docker123 | docker login -u awahab02 --password-stdin"
 
-                        // Push the Docker image to Docker Hub
-                        sh "docker push $DOCKER_IMAGE_NAME"
-                    }
+                    // Push the Docker image to Docker Hub
+                    sh "docker push $DOCKER_IMAGE_NAME"
                 }
             }
         }
